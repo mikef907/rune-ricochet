@@ -68,6 +68,51 @@ code{padding:2px 5px;background:#eeeee7;font: .9em ui-monospace,Consolas,monospa
 .website-note{border-top:1px solid var(--line);margin-top:45px;font-size:15px}
 .website-note h2{font-size:24px}
 .mobile-contents{display:none}
+.header-inner,.site-footer,.site-footer nav{flex-wrap:wrap}
+.hero-copy{min-width:0}
+.store-note{margin:14px 0 0;color:var(--muted);font-size:14px}
+.gameplay-preview{flex:none;width:300px;max-width:100%;margin:0}
+.gameplay-watch{display:block;border-radius:20px;background:var(--navy);color:#f8f6f0;box-shadow:0 16px 40px #13172d30;text-decoration:none}
+.gameplay-watch img{display:block;width:100%;height:auto;border-radius:20px 20px 0 0}
+.watch-label{display:block;padding:14px 18px;text-align:center;font-size:14px;font-weight:600;line-height:1.5}
+.gameplay-watch:hover .watch-label{text-decoration:underline}
+.gameplay-preview figcaption{margin-top:16px;font-size:15px;line-height:1.6}
+.gameplay-preview figcaption span{display:block;color:var(--muted);font-size:13px}
+.gameplay-section{border-top:1px solid var(--line);padding:36px 0 44px}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:24px}
+.section-heading .eyebrow{margin-bottom:9px}
+.section-heading h2,.press-section h2{font:400 36px/1.2 Georgia,serif;margin:0}
+.section-heading>a{font-size:14px;flex:none;padding:8px 0}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.feature-card{display:flex;flex-direction:column;align-items:flex-start;padding:26px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold)}
+.feature-card .card-index{display:block;margin-bottom:18px}
+.feature-card h3{font:400 25px/1.25 Georgia,serif;margin:0 0 15px}
+.feature-card p{font-size:15px;color:var(--muted);margin:0 0 16px}
+.feature-card .card-link{margin-top:auto;padding-top:12px}
+.press{max-width:1160px;margin:auto;padding:64px 32px 68px}
+.press h1{font:400 clamp(44px,6vw,64px)/1.1 Georgia,serif;letter-spacing:-.03em;margin:0 0 24px}
+.press .intro{max-width:760px}
+.press-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:38px 0 0;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.press-facts div{min-width:0}
+.press-facts dt{color:#77613c;font-size:12px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.press-facts dd{margin:0;font-size:15px}
+.press-section{padding:38px 0;border-bottom:1px solid var(--line)}
+.press-section>p{margin:14px 0 24px;color:var(--muted);font-size:16px}
+.asset-links{list-style:none;padding:0;margin:10px 0 0;font-size:14px}
+.asset-links li+li{margin-top:10px}
+.asset-links a{display:inline-block;padding:4px 0}
+.image-assets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}
+.image-asset{min-width:0;margin:0;border:1px solid var(--line);background:#fff}
+.asset-preview{height:320px;display:flex;align-items:center;justify-content:center;padding:20px;background:#eeeee7}
+.asset-preview img{display:block;max-height:280px;width:auto;object-fit:contain}
+.asset-preview .icon-preview{width:180px;height:180px;border-radius:28px}
+.image-asset figcaption{padding:22px}
+.image-asset h3{font:400 25px/1.25 Georgia,serif;margin:0 0 10px}
+.image-asset p{font-size:13px;color:var(--muted);margin:10px 0 0}
+.image-asset a{font-size:14px;display:inline-block;padding:4px 0}
+@media(max-width:1000px){.feature-grid{gap:16px}.feature-card{padding:22px}.press-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.gameplay-preview{width:240px}.section-heading{align-items:start;flex-direction:column;gap:10px}.feature-grid{grid-template-columns:1fr}.feature-card h3{max-width:600px}.feature-card p{max-width:650px}.image-assets{gap:16px}.asset-preview{height:260px;padding:14px}.asset-preview img{max-height:232px}.image-asset figcaption{padding:18px}}
+@media(max-width:680px){.gameplay-preview{width:280px;align-self:center}.gameplay-preview figcaption{font-size:14px}.gameplay-section{padding:28px 0 32px}.section-heading h2,.press-section h2{font-size:30px}.feature-card{padding:24px}.feature-card h3{font-size:26px}.press{padding:40px 22px 34px}.press h1{font-size:44px}.press-facts{grid-template-columns:1fr 1fr;gap:22px 16px;margin-top:28px;padding:24px 0}.press-section{padding:30px 0}.image-assets{grid-template-columns:1fr;gap:20px}.asset-preview{height:320px;padding:20px}.asset-preview img{max-height:280px}.image-asset figcaption{padding:22px}}
 @media(max-width:850px){.legal-layout{grid-template-columns:180px minmax(0,1fr);gap:32px}.hero-shot{width:240px}.header-nav{gap:18px}}
 @media(max-width:680px){body{font-size:16px;line-height:1.75}.header-inner{padding:18px 22px;display:block;min-height:0}.brand{font-size:20px}.brand img{width:38px;height:38px}.header-nav{margin-top:18px;gap:22px;font-size:13px;flex-wrap:wrap}.home{padding:45px 22px 34px}.hero{flex-direction:column;gap:36px;padding-bottom:32px;align-items:flex-start}.hero-shot{width:280px}.tagline{font-size:23px}.home h1{font-size:52px}.intro{font-size:17px}.document-grid{grid-template-columns:1fr;gap:18px;margin:26px 0}.document-card{padding:25px}.card-index{margin-bottom:18px}.document-card h2{font-size:28px}.card-link{margin-top:20px}.support{display:block;padding:18px 0}.support p{margin-bottom:14px}.contact-link{font-size:15px}.site-footer{padding:23px 22px 30px;display:block}.site-footer nav{margin-top:12px;flex-wrap:wrap;gap:16px}.legal-layout{display:block;padding:32px 22px 48px}.contents{display:none}.mobile-contents{display:block;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;margin:0 0 27px;font-size:14px}.mobile-contents summary{cursor:pointer;color:var(--link);font-weight:600}.mobile-contents nav{padding-top:14px}.mobile-contents a{display:block;margin:7px 0}.legal-document h1{font-size:36px}.legal-document h2{font-size:26px;margin-top:34px}.legal-document h3{font-size:17px}.meta{padding:15px;font-size:13px}.back-link{margin-bottom:20px}.table-wrap{margin-left:0;margin-right:0}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
