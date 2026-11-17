@@ -87,5 +87,17 @@ Search Console reports no manual actions.
 sitemap.txt is a plain-text sitemap containing the same four canonical page URLs.
 It provides a supported alternative submission to distinguish XML-specific
 processing issues from site-wide sitemap processing. Keep its URLs synchronized
-with sitemap.xml. Neither a submission receipt nor a successful live URL test
-alone confirms successful sitemap processing; check the Sitemaps report.
+with sitemap.xml.
+
+The text sitemap was also accepted but showed Couldn't fetch and zero discovered
+pages. Google's live test at November 17, 2026, 08:19 (Search Console display time)
+successfully fetched it with crawling allowed. Both formats therefore pass live
+access checks, but successful sitemap processing remains unconfirmed. There is
+no specific fetch or parsing error in either sitemap's details report.
+
+Google accepted a homepage indexing request and added it to a priority crawl
+queue. Do not repeatedly request indexing or request indexing of sitemap files.
+Check the Sitemaps report after Google's next crawl; the acceptance criterion is
+Success with four discovered pages. A submission receipt or successful live URL
+test alone does not meet that criterion. No hosting or XML defect was identified
+in the checks above, and the reason for the processing failure is not confirmed.
