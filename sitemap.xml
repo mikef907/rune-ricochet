@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mikef907.github.io/rune-ricochet/</loc></url>
-  <url><loc>https://mikef907.github.io/rune-ricochet/press/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://mikef907.github.io/rune-ricochet/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/gameplay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/icon.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mikef907.github.io/rune-ricochet/press/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/gameplay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/icon.png</image:loc></image:image>
+  </url>
   <url><loc>https://mikef907.github.io/rune-ricochet/privacy/</loc></url>
   <url><loc>https://mikef907.github.io/rune-ricochet/terms/</loc></url>
 </urlset>
