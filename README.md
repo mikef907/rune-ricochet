@@ -44,28 +44,32 @@ Keep each page's canonical URL in sitemap.xml. Update lastmod only when that pag
 content, links, or structured data changes significantly. The image entries point
 to the original gameplay capture and app icon.
 
-### GitHub Pages discovery limitation
+### Host-level sitemap discovery and diagnostics
 
-This repository publishes under /rune-ricochet/. Its robots.txt is therefore at
-/rune-ricochet/robots.txt, which crawlers do not use for host-level directives.
-The effective location is https://mikef907.github.io/robots.txt; it returned 404
-during the November 16, 2026 audit. This does not block crawling, but the project
-robots.txt cannot advertise its sitemap to Google by itself.
+GitHub Pages serves this project under /rune-ricochet/. Google only uses
+https://mikef907.github.io/robots.txt for this host; it ignores the project's
+/rune-ricochet/robots.txt. The effective host file originally returned 404,
+which allows crawling but does not advertise the sitemap.
 
-Account-level follow-up:
-1. Verify the URL-prefix property https://mikef907.github.io/rune-ricochet/ in
-   Google Search Console. If needed, add the exact HTML tag or HTML verification
-   file supplied by the owner; never invent a token.
-2. Submit https://mikef907.github.io/rune-ricochet/sitemap.xml in that property's
-   Sitemaps report.
-3. Inspect the homepage and media-kit URLs and request indexing where appropriate.
-4. Save a baseline of indexed pages, clicks, impressions, CTR, and queries. Compare
-   the following 28 days after recrawling with the prior 28 days; separate brand
-   searches from genre searches. Report observations, not guaranteed rankings.
+On November 17, 2026, the existing account-root repository
+https://github.com/mikef907/mikef907.github.io was updated to publish robots.txt
+with an unrestricted crawler group and the canonical XML sitemap URL. The
+root file returns HTTP 200 as plain text. The existing app-ads.txt is unchanged.
+Root repository checkout: E:\Projects\mikef907.github.io.
 
-If an existing account-root Pages repository is configured later, add the sitemap
-directive to its root robots.txt without replacing any existing rules. Do not
-change unrelated account-wide hosting from this project.
+The root URL-prefix property https://mikef907.github.io/ is now verified in
+Search Console using Google's HTML verification file. Preserve both that file
+and the game homepage's existing verification meta tag. The root property is
+needed for robots.txt and Crawl Stats reports; subfolder properties do not
+expose those diagnostics. At verification time, Crawl Stats had no data yet.
+
+This corrects a sitemap discovery gap, but the missing robots.txt was not a
+crawl block and is not established as the cause of Couldn't fetch. Do not
+claim that the sitemap is processed until Search Console reports Success.
+
+For ongoing maintenance, keep canonical URLs synchronized in both sitemap
+formats, retain the root sitemap declaration, and use Search Console to inspect
+new crawl errors. The original XML sitemap was resubmitted after the host fix.
 
 References:
 - https://developers.google.com/search/docs/essentials
@@ -101,3 +105,23 @@ Check the Sitemaps report after Google's next crawl; the acceptance criterion is
 Success with four discovered pages. A submission receipt or successful live URL
 test alone does not meet that criterion. No hosting or XML defect was identified
 in the checks above, and the reason for the processing failure is not confirmed.
+
+
+### Follow-up findings (November 17, 2026)
+
+The homepage is now indexed. URL Inspection reports a successful Googlebot
+smartphone crawl at November 17, 2026, 08:17:46 (Search Console display time),
+with crawling and indexing allowed. Google selected the inspected homepage URL
+as canonical. The crawl predates the host robots.txt change, so that change must
+not be credited with making the homepage indexable.
+
+All four IPv4 addresses returned by DNS delivered byte-identical sitemap XML
+with HTTP 200 and valid TLS. IPv6 could not be tested from this workstation,
+which has no IPv6 default route. This is a local test limitation, not evidence
+of a GitHub Pages IPv6 failure.
+
+The remaining sitemap warning does not establish a site-wide crawl block.
+Google's Sitemaps help lists low crawl demand among possible causes, but Search
+Console has not exposed the exact cause for this site. Avoid speculative XML
+rewrites or additional duplicate sitemap formats. Wait for actual crawl data or
+a specific error before changing hosting further.
