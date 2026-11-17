@@ -74,3 +74,18 @@ References:
 - https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 - https://apps.apple.com/us/app/rune-ricochet/id6818950693
 - https://play.google.com/store/apps/details?id=com.swollom.runericochet
+
+
+### Sitemap fetch diagnosis (November 17, 2026)
+
+The URL-prefix property is verified using the homepage's Google verification tag;
+preserve that tag. Google accepted the XML sitemap submission, but initially
+reported Couldn't fetch even though its live URL test reported Crawl allowed: Yes
+and Page fetch: Successful. Public requests return HTTP 200 with valid XML, and
+Search Console reports no manual actions.
+
+sitemap.txt is a plain-text sitemap containing the same four canonical page URLs.
+It provides a supported alternative submission to distinguish XML-specific
+processing issues from site-wide sitemap processing. Keep its URLs synchronized
+with sitemap.xml. Neither a submission receipt nor a successful live URL test
+alone confirms successful sitemap processing; check the Sitemaps report.
