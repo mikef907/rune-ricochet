@@ -1,0 +1,61 @@
+/* The kit shares the plum, ice and gold palette of the game landing page. */
+:root {
+  color-scheme: dark;
+  --paper: #110e19;
+  --ink: #faf3e6;
+  --muted: #c3baca;
+  --gold: #f4cf83;
+  --link: #a4e5ed;
+  --line: #443b4d;
+  --panel: #201a29;
+}
+html { scroll-padding-top: 1.5rem; }
+body { background: radial-gradient(ellipse at 80% 6%, #282034, transparent 38rem), var(--paper); }
+.site-header { background: #15101d; border-bottom: 1px solid var(--line); }
+.header-inner { min-height: 76px; }
+.press { padding-top: 26px; }
+.back-link { color: var(--muted); margin-bottom: 2rem; }
+.kit-hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(24px, 4vw, 64px); }
+.eyebrow, .press-facts dt { color: var(--gold); }
+.press h1 { font-size: clamp(3.2rem, 5.7vw, 5.5rem); line-height: 1; margin-bottom: 16px; }
+.press .tagline { font-size: clamp(1.4rem, 2vw, 1.8rem); }
+.press .intro { font-size: 1rem; line-height: 1.7; }
+.kit-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 24px; font-size: .95rem; }
+.download-kit { color: #231827; background: var(--gold); padding: 11px 20px; text-decoration: none; font-weight: 650; border-radius: 5px; }
+.download-kit:hover { background: #ffe3a9; }
+.cover { margin: 0; border: 1px solid #605569; background: #17141e; box-shadow: 0 18px 54px #07050d66; }
+.cover img { width: 100%; display: block; }
+.cover figcaption { padding: 9px 15px; display: flex; justify-content: space-between; font-size: .84rem; }
+.cover span { color: var(--muted); }
+.press-facts { grid-template-columns: .72fr .8fr 1fr 1.45fr; padding-block: 20px; }
+.press-facts dd { line-height: 1.5; }
+.press-section { padding-block: clamp(32px, 4vw, 56px); }
+.image-assets { grid-template-columns: 1.45fr 1fr 1fr; gap: 18px; }
+.image-asset, .feature-card { border: 1px solid var(--line); background: var(--panel); }
+.asset-preview { height: clamp(170px, 17vw, 220px); padding: 12px; background: #302939; border-bottom: 1px solid var(--line); }
+.asset-preview img { max-height: 100%; }
+.asset-preview.wide { padding: 0; background: #0b0910; }
+.wide img { width: 100%; height: 100%; object-fit: contain; }
+.icon img { width: 45%; border-radius: 20%; }
+.image-asset figcaption { padding: 18px 20px; }
+.image-asset h3 { font-size: 1.35rem; }
+.image-asset p { margin: 0 0 8px; }
+.feature-card { border-width: 1px 0 0; border-color: #786b81; background: transparent; padding: 18px 0 0; }
+.asset-links { margin-top: auto; }
+.store-links { align-items: center; gap: 10px 22px; }
+.store-links .cta { color: var(--link); text-decoration: underline; font-size: 1rem; background: none; padding: 5px 0; }
+.support { padding-top: 32px; }
+.skip { background: var(--ink); color: var(--paper); }
+@media (max-width: 850px) {
+  .kit-hero { grid-template-columns: 1fr; }
+  .cover { max-width: 600px; }
+  .press-facts { grid-template-columns: 1fr 1fr; }
+  .image-assets { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .image-assets { grid-template-columns: 1fr; }
+  .asset-preview { height: 210px; }
+  .kit-actions { gap: 12px 18px; }
+  .press { padding-top: 20px; }
+  .header-nav { gap: 8px 18px; }
+}
