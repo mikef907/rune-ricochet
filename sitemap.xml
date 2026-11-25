@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://mikef907.github.io/rune-ricochet/</loc>
+    <loc>https://runericochet.com/</loc>
     <lastmod>2026-11-16</lastmod>
-    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/gameplay.jpg</image:loc></image:image>
-    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/icon.png</image:loc></image:image>
+    <image:image><image:loc>https://runericochet.com/assets/gameplay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://runericochet.com/assets/icon.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://mikef907.github.io/rune-ricochet/press/</loc>
+    <loc>https://runericochet.com/press/</loc>
     <lastmod>2026-11-20</lastmod>
-    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/gameplay.jpg</image:loc></image:image>
-    <image:image><image:loc>https://mikef907.github.io/rune-ricochet/assets/icon.png</image:loc></image:image>
+    <image:image><image:loc>https://runericochet.com/assets/gameplay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://runericochet.com/assets/icon.png</image:loc></image:image>
   </url>
-  <url><loc>https://mikef907.github.io/rune-ricochet/privacy/</loc></url>
-  <url><loc>https://mikef907.github.io/rune-ricochet/terms/</loc></url>
-  <url><loc>https://mikef907.github.io/rune-ricochet/bank-shot/</loc></url>
+  <url><loc>https://runericochet.com/privacy/</loc></url>
+  <url><loc>https://runericochet.com/terms/</loc></url>
+  <url><loc>https://runericochet.com/bank-shot/</loc></url>
 </urlset>
