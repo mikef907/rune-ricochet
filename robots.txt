@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://mikef907.github.io/rune-ricochet/sitemap.xml
+Sitemap: https://runericochet.com/sitemap.xml
