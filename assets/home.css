@@ -112,3 +112,10 @@ h1{font-size:clamp(64px,17vw,88px);margin-top:22px}.tagline{font-size:16px;margi
 .game-questions a{color:var(--gold)}
 @media(max-width:800px){.about-game{gap:35px;padding-bottom:65px}}
 @media(max-width:600px){.about-game{grid-template-columns:1fr;gap:26px;padding-bottom:54px}.about-intro h2{font-size:34px}.game-questions summary{font-size:14px}}
+
+@media (max-width: 700px) and (min-height: 460px) {
+  html { scroll-padding-top: 80px; }
+  .site-header { position: sticky; top: 0; background: var(--bg); }
+  .header-inner { min-height: 60px; }
+  .header-nav .nav-download { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; }
+}
